@@ -6,7 +6,7 @@ to allow you to print javascript dates according to a format specifier.
 
 Based heavily on Philip S Tellis' version for client side javascript.
 
-Tested on node.js.
+Tested on node.js. 
 
 Basic usage:
 -----------
