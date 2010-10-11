@@ -44,14 +44,10 @@ Supported Format Specifiers:
 - %t - tab character
 - %T - current time, equal to %H:%M:%S
 - %u - weekday as a decimal number [1,7], with 1 representing Monday
-- %U - week number of the current year as a decimal number, starting with
-       the first Sunday as the first day of the first week
-- %V - The ISO 8601:1988 week number of the current year as a decimal number,
-       range 01 to 53, where week 1 is the first week that has at least 4 days
-       in the current year, and with Monday as the first day of the week.
+- %U - week number of the current year as a decimal number, starting with the first Sunday as the first day of the first week
+- %V - The ISO 8601:1988 week number of the current year as a decimal number, range 01 to 53, where week 1 is the first week that has at least 4 days in the current year, and with Monday as the first day of the week.
 - %w - day of the week as a decimal, Sunday being 0
-- %W - week number of the current year as a decimal number, starting with the
-       first Monday as the first day of the first week
+- %W - week number of the current year as a decimal number, starting with the first Monday as the first day of the first week
 - %x - preferred date representation for the current locale without the time
 - %X - preferred time representation for the current locale without the date
 - %y - year as a decimal number without a century (range 00 to 99)
