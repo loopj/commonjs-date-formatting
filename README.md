@@ -11,10 +11,10 @@ Tested on node.js.
 Basic usage:
 -----------
     // Load the module
-    var date_format = require("date_format");
+    var strftime = require("date_format").strftime;
 
     // Print the current date in mm/dd/yyyy format
-    console.log(date_format(new Date(), "%m/%d/%Y"));
+    console.log(strftime(new Date(), "%m/%d/%Y"));
 
 Supported Format Specifiers:
 -------------------------
