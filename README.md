@@ -8,6 +8,11 @@ Based heavily on Philip S Tellis' version for client side javascript.
 
 Tested on node.js. 
 
+Install:
+--------
+cd ~/.node_libraries
+git clone git://github.com/doppler/commonjs-date-formatting.git date_format
+
 Basic usage:
 -----------
     // Load the module
