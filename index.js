@@ -74,7 +74,7 @@ var formats = {
       var doy = parseInt(ms/60000/60/24, 10)+1;
       return xPad(doy, 0, 100);
     },
-  m: function(d) { return xPad(d.getMonth()+1, 0); },
+  l: function (d) { var l=d.getHours()%12; return xPad(l==0?12:l,' ')},
   M: ['getMinutes', '0'],
   p: function(d) { return locales[d.locale].p[d.getHours() >= 12 ? 1 : 0 ]; },
   P: function(d) { return locales[d.locale].P[d.getHours() >= 12 ? 1 : 0 ]; },
@@ -147,7 +147,7 @@ exports.strftime = function (d, fmt, locale) {
   }
 
   // Now replace formats - we need a closure so that the date object gets passed through
-  var str = fmt.replace(/%([aAbBCdegGHIjmMpPSuUVwWyY%])/g, function(m0, m1) {
+  var str = fmt.replace(/%([aAbBCdegGHIjlmMpPSuUVwWyY%])/g, function(m0, m1) {
     var f = formats[m1];
     if(typeof(f) == 'string') {
       return d[f]();
