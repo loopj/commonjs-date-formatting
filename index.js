@@ -75,6 +75,7 @@ var formats = {
       return xPad(doy, 0, 100);
     },
   l: function (d) { var l=d.getHours()%12; return xPad(l==0?12:l,' ')},
+  m: function(d) { return xPad(d.getMonth()+1, 0); },
   M: ['getMinutes', '0'],
   p: function(d) { return locales[d.locale].p[d.getHours() >= 12 ? 1 : 0 ]; },
   P: function(d) { return locales[d.locale].P[d.getHours() >= 12 ? 1 : 0 ]; },
