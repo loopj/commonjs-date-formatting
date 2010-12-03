@@ -11,7 +11,7 @@ Tested on node.js.
 Install:
 --------
     cd ~/.node_libraries
-    git clone git://github.com/doppler/commonjs-date-formatting.git date_format
+    git clone git://github.com/loopj/commonjs-date-formatting.git date_format
 
 Basic usage:
 -----------
